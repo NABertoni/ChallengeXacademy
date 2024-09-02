@@ -1,0 +1,6 @@
+{
+  "devDependencies": {
+    "cypress": "^13.14.1",
+    "junit": "^1.4.9"
+  }
+}

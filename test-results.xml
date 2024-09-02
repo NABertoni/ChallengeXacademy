@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="19.828" tests="2" failures="1">
+  <testsuite name="Root Suite" timestamp="2024-09-02T06:05:58" tests="0" file="cypress\e2e\myTestSaucedemo.cy.js" time="0.000" failures="0">
+  </testsuite>
+  <testsuite name="Saucedemo testing functions" timestamp="2024-09-02T06:05:58" tests="2" time="19.819" failures="1">
+    <testcase name="Saucedemo testing functions Login with standard_user and perform checkout" time="7.981" classname="Login with standard_user and perform checkout">
+    </testcase>
+    <testcase name="Saucedemo testing functions Login with problem_user and perform checkout" time="0.000" classname="Login with problem_user and perform checkout">
+      <failure message="Timed out retrying after 4000ms: Expected to find element: `.complete-text`, but never found it." type="AssertionError"><![CDATA[AssertionError: Timed out retrying after 4000ms: Expected to find element: `.complete-text`, but never found it.
+    at Context.eval (webpack:///./cypress/e2e/myTestSaucedemo.cy.js:62:29)]]></failure>
+    </testcase>
+  </testsuite>
+</testsuites>
