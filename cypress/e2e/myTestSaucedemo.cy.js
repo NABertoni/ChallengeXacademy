@@ -41,6 +41,19 @@ describe('Saucedemo testing functions', () => {
     cy.get('#user-name').type('problem_user')
     cy.get('#password').type('secret_sauce')
     cy.get('#login-button').click()
+    
+
+    // Logout 1
+    cy.get('.bm-burger-button').click()
+    cy.get('#logout_sidebar_link').click()
+    cy.get('#login-button').should('exist')
+    cy.wait(500)
+    
+
+    // Login with problem_user again
+    cy.get('#user-name').type('problem_user')
+    cy.get('#password').type('secret_sauce')
+    cy.get('#login-button').click()
     cy.get('.inventory_list').should('exist')
 
     // Add products to cart
