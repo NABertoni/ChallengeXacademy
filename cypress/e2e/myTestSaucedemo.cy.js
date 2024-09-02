@@ -54,7 +54,7 @@ describe('Saucedemo testing functions', () => {
     cy.wait(500)
     cy.get('[data-test="lastName"]').type('Florescu')
     cy.wait(500)
-    cy.get('[data-test="postalCode"]').type('5272')
+    cy.get('[data-test="postalCode"]').type('	5272')
     cy.wait(500)
     cy.get('.btn_primary').click()
     cy.get('.btn_action').should('exist')
